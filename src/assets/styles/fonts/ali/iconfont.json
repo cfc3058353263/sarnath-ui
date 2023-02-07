@@ -1,0 +1,107 @@
+{
+  "id": "1670512",
+  "name": "OMP",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "运维部项目",
+  "glyphs": [
+    {
+      "icon_id": "11383924",
+      "name": "Title",
+      "font_class": "Title",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3207698",
+      "name": "电表",
+      "font_class": "icon-ammeter",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5725928",
+      "name": "solar-panel",
+      "font_class": "solar-panel",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "6806374",
+      "name": "Solar-Panel",
+      "font_class": "Solar-Panel",
+      "unicode": "eacf",
+      "unicode_decimal": 60111
+    },
+    {
+      "icon_id": "6943364",
+      "name": "光伏电站",
+      "font_class": "guangfudianzhan",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "6943647",
+      "name": "逆变器",
+      "font_class": "nibianqi",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "754751",
+      "name": "系统运维-文件",
+      "font_class": "xitongyunweiwenjian",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1319977",
+      "name": "智能运维",
+      "font_class": "zhinengyunwei",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "5466532",
+      "name": "自动化运维",
+      "font_class": "oper-auto",
+      "unicode": "e7cb",
+      "unicode_decimal": 59339
+    },
+    {
+      "icon_id": "5829499",
+      "name": "运维平台",
+      "font_class": "wulumuqishigongandashujuguanlipingtai-ico-",
+      "unicode": "e7e9",
+      "unicode_decimal": 59369
+    },
+    {
+      "icon_id": "7057565",
+      "name": "监控运维",
+      "font_class": "yunwei",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "11429648",
+      "name": "运维中心",
+      "font_class": "yunweizhongxin",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "982596",
+      "name": "图表",
+      "font_class": "tubiao",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "384190",
+      "name": "table",
+      "font_class": "table",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    }
+  ]
+}

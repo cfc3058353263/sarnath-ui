@@ -1,0 +1,152 @@
+
+.homeContainer {
+	height: 100%;
+	position: relative;
+	background-color: #0368b6;
+	color: white;
+
+	//loading过程的样式覆盖
+	.el-loading-mask {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	.fadian {
+		background-color: transparent;
+		//发电页的中间电站列表
+		.S-Table {
+			thead {
+				background-color: transparent !important;
+				th {
+					background-color: #023c69 !important;
+				}
+			}
+			tbody {
+				tr {
+					td:first-child {
+						// background-color: #023C69 !important;
+					}
+				}
+			}
+		}
+	}
+	.yunwei {
+		.omTable table th {
+			background-color: #08698f;
+		}
+		.omTable tr:hover {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+	}
+
+	.mydialog {
+		.el-dialog {
+			background: #08688E url(../images/home/dialog-bg.png) no-repeat center center;
+			background-size: cover;
+			color: #eee;
+			.el-dialog__title {
+				color: #eee;
+			}
+			.el-dialog__body {
+				padding-top: 0;
+				span {
+					color: #eee;
+				}
+
+				.dialogTable {
+					.S-My-Table {
+						th {
+							background-color: #086990 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.homeContainer-1 {
+	.home-container {
+		padding: 10px;
+	}
+
+	.home-module-item {
+		background-color: rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 5px rgba(0, 225, 228, 0.5);
+		border-radius: 0px;
+		margin: 10px;
+		overflow: hidden;
+		padding: 5px 8px;
+	}
+
+	.home-module-item-header {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.home-module-item-title {
+		color: $homeFontColor;
+		font-weight: 600;
+		font-size: 15px;
+		padding-left: 10px;
+	}
+
+	.home-module-item-title:before {
+		content: '';
+		width: 4px;
+		height: 100%;
+		padding-right: 8px;
+		border-left: 3px solid $homeFontColor;
+	}
+}
+
+.homeContainer-2 {
+	// background: url("/static/image/home/home-bg.jpg") no-repeat fixed top;
+	.bigscreen {
+		background-color: #0a141c;
+
+		.tranW {
+			transition: width 1s ease-in-out 0.5s;
+		}
+	}
+
+	.fadian {
+		background-image: url('../images/home/fadian-bg.jpg');
+		background-size: 100% 100%;
+	}
+
+	.yunwei {
+		background-color: $yunweiBgc;
+		background-image: url('../images/home/yunwei-bg.jpg');
+		background-size: 100% 100%;
+	}
+
+	.home-module-item {
+		background-color: rgba(0, 0, 0, 0.35);
+		border-radius: 0px;
+		margin: 6px;
+		overflow: hidden;
+		padding: 5px 8px;
+	}
+
+	.home-module-item-header {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.home-module-item-title {
+		color: $homeFontColor;
+		font-weight: 600;
+		font-size: 15px;
+		padding-left: 10px;
+	}
+
+	.home-module-item-title:before {
+		content: '';
+		width: 4px;
+		height: 100%;
+		padding-right: 8px;
+		border-left: 3px solid $homeFontColor;
+	}
+}
+
+//home页相关公共样式end

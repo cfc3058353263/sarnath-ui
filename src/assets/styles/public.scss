@@ -1,0 +1,72 @@
+/**
+ * 公共样式
+ */
+
+
+.item-bg-color{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.wh100{
+  width:100%;height:100%;
+}
+
+// 背景颜色 start
+.bg-red{
+	background-color: red;
+}
+.bg-cyan{
+	background-color: cyan;
+}
+.bg-blue{
+	background-color: blue;
+}
+//背景颜色 end
+
+
+
+
+/**
+ * 逆变器状态标识
+ */
+.inv-normal{
+  background-color: #009900;
+}
+.inv-warn{
+  background-color: #FF9900;
+}
+.inv-error{
+  background-color: red;
+}
+
+/**
+ * 后台代码公共样式
+ */
+.s-select-item {
+margin-right: 10px;
+/* background-color: rgba(153,205,255,0.5); */
+padding: 0 10px;
+margin-bottom: 10px;
+line-height: 38px;
+}
+
+.s-container {
+padding: 0 20px;
+}
+  
+
+
+.S-Table .el-progress__text{
+	width:45px;
+	text-align:left;
+}
+
+
+.home-header .el-submenu__title{
+	height: 52px;
+	line-height: 60px;
+}
+.home-header .s-el-menu .el-submenu .el-submenu__icon-arrow{
+	top:57%;
+}
+

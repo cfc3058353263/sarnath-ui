@@ -1,0 +1,156 @@
+/**
+	 * 注：
+	 * 	1.header最多支持两行合并；
+	 * 	2.如果第一列最后一列需要固定，则这两列的表头不能为两行
+	 */
+	
+	-----------------------------------------------------------------------------------------------------------------------------------------
+	<!-- 引用 -->
+	<STable :psListHeaderData="psListHeaderData" :pslist="pslist">
+		<template slot='invStatus' slot-scope="props">
+			<div class="flex flex-pack-center">
+				<div class="inv-num" v-if="props.item[0]==0&&props.item[1]==0&&props.item[2]==0" style="color:transparent;">0</div>
+				<div class="inv-num inv-normal" v-if="props.item[0]">{{props.item[0]}}</div>
+				<div class="inv-num inv-warn" v-if="props.item[1]">{{props.item[1]}}</div>
+				<div class="inv-num inv-error" v-if="props.item[2]">{{props.item[2]}}</div>
+			</div>
+		</template>
+	</STable>
+	
+	//css样式
+	//如果需要改变td的样式，写法如下，选择器为 ‘.s-table-’ + type字段
+	.s-table-warnCount{
+		padding:0 !important;
+	}
+	
+	-----------------------------------------------------------------------------------------------------------------------------------------
+	//关于排序，排序分为两大类：前端排序和后端排序；
+		//前端排序排序方法有三种：1、String；2、Number；3、自定义
+		//自定义排序逻辑可以根据实际需求来重写，注意，方法名称必须为specialSortFunc
+		specialSortFunc(a,b,sortType,order){
+			if (order == 'desc') {
+				return a[sortType] - b[sortType]
+			} else if (order == 'asc') {
+				return b[sortType] - a[sortType]
+			}
+		}
+		
+		//后端排序需要自定义排序方法，在父组件中一般要将排序执行的请求方法放入backEndSortFunc
+			
+	
+	
+	-----------------------------------------------------------------------------------------------------------------------------------------
+	
+	//引入
+	import STable from '@/components/STable/index.vue'
+	
+	
+	psListHeaderData: [{
+			title: '电站',
+			type: 'psname',
+			order: '',
+			show:true,
+			width:350,//此处的width是minWidth
+			sort:true,
+			sortType:'string'//排序方法有三种：1、String；2、Number；3、自定义
+		},
+		{
+			title: '装机',
+			type: 'insCap',
+			order: '',
+			show:true,
+			width:350,
+			sortType:'number'
+		},{
+			title:'测试',
+			children:[
+				{
+					title: '月发电',
+					type: 'ge_month',
+					order: '',
+					show:true,
+						width:350,
+				}, {
+					title: '总发电',
+					type: 'ge_total',
+					order: '',
+					show:true,
+						width:350,
+				}
+			]
+		}, {
+			title: '逆变器状态',
+			type: 'invStatus',
+			order: '',
+			show:true
+		},{
+			title:'测试2',
+			children:[
+				{
+					title: '月发电2',
+					type: 'ge_month',
+					order: '',
+					show:true,
+						width:350,
+				}, {
+					title: '总发电2',
+					type: 'ge_total',
+					order: '',
+					show:true,
+						width:350,
+				}
+			]
+		}, {
+			title: '告警',
+			type: 'warnCount',
+			order: '',
+			show:true,
+			width:350,
+		},
+		{
+			title: '小时数',
+			type: 'hour',
+			order: '',
+			show:true,
+			width:350,
+		}, {
+			title: '日发电',
+			type: 'ge_day',
+			order: '',
+			show:true,
+			width:350,
+		}, {
+			title: '月完成比',
+			type: 'ge_monthRatio',
+			order: '',
+			show:true,
+			width:350,
+		}, {
+			title: '月发电',
+			type: 'ge_month',
+			order: '',
+			show:true,
+			width:350,
+		}, {
+			title: '总发电',
+			type: 'ge_total',
+			order: '',
+			show:true,
+			width:350,
+		}
+	],
+	pslist: [{
+		"psname": "某省某市电站姚杰",
+		"insCap": 158.1,
+		"warnCount": 1,
+		"hour": 1.7,
+		"ge_monthRatio": 45.5,
+		"ge_day": 242.6,
+		"ge_month": 866.7,
+		"ge_total": 20432.4,
+		"invStatus": [2, 3, 0],
+		"workOrderCount": [1, 0]
+	}}
+	
+	
+	
